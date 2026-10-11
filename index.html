@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rudra Furniture's | Premium Furniture & Interiors</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f1e8;
+            color: #302319;
+        }
+
+        header {
+            background: #24180f;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            color: #d6ad78;
+        }
+
+        header p {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #ddd0bf;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d6ad78;
+        }
+
+        .hero {
+            min-height: 440px;
+            padding: 85px 8%;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(90deg, #24180f 10%, #24180fe8 45%, #24180f55),
+                url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 560px;
+        }
+
+        .tag {
+            color: #e1b986;
+            letter-spacing: 3px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            line-height: 1.8;
+            color: #eee1d1;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            background: #c99a62;
+            color: #24180f;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #e4bd8c;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-heading {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .section-description {
+            color: #75695d;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px #49311b12;
+        }
+
+        .category img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .category h3 {
+            padding: 18px 18px 8px;
+        }
+
+        .category p {
+            padding: 0 18px 20px;
+            color: #75695d;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .custom {
+            background: #e8d7c0;
+            text-align: center;
+        }
+
+        .custom p {
+            max-width: 650px;
+            margin: 15px auto 25px;
+            line-height: 1.8;
+            color: #5e4a38;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            color: #75695d;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #24180f;
+            color: #ddd0bf;
+            text-align: center;
+            padding: 28px 15px;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px 12px 0 0;
+            }
+
+            .hero {
+                padding: 65px 7%;
+            }
+
+            .categories,
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+        home
+        .whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+    </style>
+</head>
+
+<body>
+
+    <header id="home">
+        <div>
+            <div class="logo">Rudra Furniture's</div>
+            <p>DESIGNS FOR A BETTER TOMORROW</p>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#custom">Custom Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="tag">FURNITURE · INTERIORS · CRAFTSMANSHIP</div>
+
+                <h1>Turning Spaces Into Beautiful Homes.</h1>
+
+                <p>
+                    From elegant furniture to custom interior solutions,
+                    we bring your ideas to life with thoughtful designs
+                    and attention to detail.
+                </p>
+
+                <a href="#collection" class="btn">Explore Our Collection →</a>
+            </div>
+        </div>
+
+        <section id="collection">
+            <p class="tag">EXPLORE OUR RANGE</p>
+
+            <h2 class="section-heading">Furniture For Every Space</h2>
+
+            <p class="section-description">
+                Discover furniture ideas for your home, office and
+                everyday living spaces.
+            </p>
+
+            <div class="categories">
+
+                <article class="category">
+                    <img
+
+                       src="images/tv-unit.jpg"
+                       alt="Custom TV unit made by Rudra Furniture's"
+>
+                    <h3>Custom TV Units</h3>
+<p>
+    Premium TV units designed and crafted
+    to complement your living space.
+</p>
+                </article>
+
+                <article class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                        alt="Living room sofa">
+                    <h3>Living Room</h3>
+                    <p>Sofas and furniture for welcoming living spaces.</p>
+                </article>
+
+                <article class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern home interior">
+                    <h3>Custom Interiors</h3>
+                    <p>Furniture and interior solutions tailored to your space.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="custom" id="custom">
+            <p class="tag">MADE FOR YOUR SPACE</p>
+
+            <h2 class="section-heading">Have a Custom Furniture Idea?</h2>
+
+            <p>
+                Every space is different. Tell us about your requirements
+                and explore furniture solutions designed around your needs.
+            </p>
+
+            <a href="#contact" class="btn">Discuss Your Requirements</a>
+        </section>
+
+        <section>
+            <p class="tag">WHY CHOOSE US</p>
+
+            <h2 class="section-heading">Thoughtful Design. Practical Living.</h2>
+
+            <br><br>
+
+            <div class="features">
+
+                <div class="feature">
+                    <h3>Quality Focus</h3>
+                    <p>Furniture planned with attention to materials and finish.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Custom Solutions</h3>
+                    <p>Ideas adapted to your space, needs and preferences.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Complete Service</h3>
+                    <p>Explore furniture and interior solutions in one place.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h3>Rudra Furniture's</h3>
+
+        <p>Furniture · Custom Work · Interior Solutions</p>
+
+        <p>Call us: <a href="tel:9724992552">9724992552</a></p>
+
+<p>WhatsApp: <a href="https://wa.me/919724992552" target="_blank">Chat with us</a></p>
+
+<p>Instagram: <a href="https://www.instagram.com/rudrafurnitures.619/" target="_blank">@rudrafurnitures.619</a></p>
+
+<p>Address: Bavisa Faliya, Umarkui Road, Amli, Silvassa – 396 230, Dadra & Nagar Haveli</p>
+
+<p><a href="https://www.google.com/maps/search/?api=1&query=Bavisa+Faliya+Umarkui+Road+Amli+Silvassa+396230" target="_blank">Get Directions</a></p>
+
+
+        <p>© 2026 Rudra Furniture's. All rights reserved.</p>
+    </footer>
+
+<a
+    href="https://wa.me/919724992552"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Rudra Furniture's on WhatsApp">
+    WhatsApp Us
+</a>
+</body>
+</html>
